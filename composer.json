@@ -1,0 +1,29 @@
+{
+    "name": "gulzarali/vote",
+    "description": "This package is to extend post rating functionality of sites",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gulzar Ali",
+            "email": "aligulzar375@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.1",
+        "laravel/framework":"6.18.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "GulzarAli\\Vote\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "GulzarAli\\Vote\\VoteServiceProvider"
+            ]
+        }
+    }
+}
